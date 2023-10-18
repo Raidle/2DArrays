@@ -12,10 +12,18 @@ int main()
     cout << "Number of Columns: " << cols << endl;
     cout << "\n\n";
  
+    for (int r = 0; r < rows; r++) {
+        for (int c = 0; c < cols; c++) {
+            cout << "Enter row #" << r + 1 << " Column #" << c + 1 << " ==> ";
+            cin >> t[r][c];
+        }
+        cout << "\n";
+    }
+
 
     cout << "Array Values: " << endl;
     for (int r = 0; r < rows; r++) {
-        cout << "Row " << r + 1 << " ";
+        cout << "Row " << r + 1 << ": ";
         for (int c = 0; c < cols; c++) {
             cout << t[r][c] << " ";
         }
